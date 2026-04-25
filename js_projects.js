@@ -1,4 +1,4 @@
-//
+//JS TASKS
 
 // Task 1 — Check if a number is Even or Odd
 function isEvenOrOdd(num) {
@@ -136,16 +136,16 @@ console.log(cart.showCart());
 let quiz = {
   questions: [
     { q: "What is 2 + 2?",   options:["3","4","5"], answer: "4" },
-    { q: "JS stands for?",    options:["Java Script","Just Script","JSON Script"], answer: "Java Script" },
+    { q: "Who is Rahul Gandhi?",    options:["Congress Leader","Pappu","Opposition"], answer: "Pappu" },
     { q: "typeof null?",      options:["null","object","undefined"], answer: "object" },
   ],
   score: 0,
   submitAnswer(qIndex, userAnswer) {
     if (this.questions[qIndex].answer === userAnswer) {
       this.score++;
-      return "✓ Correct!";
+      return " Correct!";
     }
-    return `✗ Wrong. Answer: ${this.questions[qIndex].answer}`;
+    return ` Wrong. Answer: ${this.questions[qIndex].answer}`;
   },
   getResult() {
     let total = this.questions.length;
