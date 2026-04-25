@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        /* Mobile view */
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                width: 100%;
+                display: none;
+                background-color: #333;
+            }
+
+            .menu a {
+                text-align: center;
+                border-top: 1px solid #444;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .toggle {
+                display: block;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .toggle {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">MySite</div>
+    <div class="toggle" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
