@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Section</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .pricing {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .plan {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .plan h3 {
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            color: green;
+            margin: 15px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .pricing {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2>Our Pricing</h2>
+
+<div class="pricing">
+
+    <div class="plan">
+        <h3>Bare Minimum</h3>
+        <p class="price">₹199/month</p>
+        <ul>
+            <li>1 User</li>
+            <li>Basic Support</li>
+            <li>Limited Access</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+    <div class="plan">
+        <h3>True ones</h3>
+        <p class="price">₹499/month</p>
+        <ul>
+            <li>5 Users</li>
+            <li>Priority Support</li>
+            <li>Full Access</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+    <div class="plan">
+        <h3>Ultimate</h3>
+        <p class="price">₹999/month</p>
+        <ul>
+            <li>Unlimited Users</li>
+            <li>24/7 Support</li>
+            <li>All Features</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+</div>
+
+</body>
+</html>
