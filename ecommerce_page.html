@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: mint;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: grey;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Products */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: orange;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 9px #ccc;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .price {
+            color: yellow;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div>ReBase SHOP</div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Cart</a>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to MyShop</h1>
+    <p>Prices that drop your jaws</p>
+</div>
+
+<!-- Products -->
+<div class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Product 1</h3>
+        <p class="price">₹499</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Product 2</h3>
+        <p class="price">₹699</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Product 3</h3>
+        <p class="price">₹899</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/150">
+        <h3>Product 4</h3>
+        <p class="price">₹999</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>MyShop</p>
+</footer>
+
+</body>
+</html>
