@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: orange;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .main {
+            flex: 3;
+            background: skyblue;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+        }
+
+        .post {
+            margin-bottom: 20px;
+        }
+
+        .post h2 {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My ReBase Blog</h1>
+</header>
+
+<div class="container">
+
+    <div class="main">
+        <div class="post">
+            <h2>First Post</h2>
+            <p>This is my first blog post.</p>
+        </div>
+
+        <div class="post">
+            <h2>Second Post</h2>
+            <p>This is another blog post.</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>About</h3>
+        <p>Student learning web development.</p>
+
+        <h3>Categories</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>ReBase Blog</p>
+</footer>
+
+</body>
+</html>
